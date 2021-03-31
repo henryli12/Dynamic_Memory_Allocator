@@ -19,6 +19,7 @@ The functions that I implemented are: **malloc**, **realloc**, **free**, and **m
    * @param size The number of bytes requested to be allocated.
    *
    * @return If size is 0, then NULL is returned without setting sf_errno.
+   * 
    * If size is nonzero, then if the allocation is successful a pointer to a valid region of
    * memory of the requested size is returned.  If the allocation is not successful, then
    * NULL is returned and sf_errno is set to ENOMEM.
@@ -69,6 +70,7 @@ The functions that I implemented are: **malloc**, **realloc**, **free**, and **m
    *
    * @return If align is not a power of two or is less than the minimum block size,
    * then NULL is returned and sf_errno is set to EINVAL.
+   * 
    * If size is 0, then NULL is returned without setting sf_errno.
    * Otherwise, if the allocation is successful a pointer to a valid region of memory
    * of the requested size and with the requested alignment is returned.
